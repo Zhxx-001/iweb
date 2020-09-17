@@ -76,103 +76,82 @@
 	line-height: 32px;
 	padding: 0 0.5em;
 }
-
-.my-cart>span {
-	color: #00be56;
+.my-cart > .fa{
+	color:#00BE56;
+	padding: 0 0.5em;
 }
 
 /* 3.导航条 */
 .navbar {
-	background: #57BC4C;
+	background: #00BE56;
 	border-bottom: 3px solid #b3efc0;
-	height: 50px;
+	height: 52px;
+	font-size: 1.15em;
 }
-
-.nav {
-	display: block;
-
+.menu{
+	
 }
-
-.container {
-	width: 1000px;
-	box-sizing: border-box;
-	margin: 0 auto;
-}
-
-div {
-	display: block;
-}
-
-.nav {
+.menu > li {
 	float: left;
+	line-height: 52px;
+	padding: 0 1.5em;
 }
-
-ul,
-ol {
-	list-style: none;
-	margin: 0;
+.menu > li:hover{
+	background-color: #00b149;
+	height: 48px;
 }
-
-.nav ul li {
-	float: left;
+.menu > li.active{
+	height: 48px;
+	background-color: #00a43d;
 }
-
-.nav ul li:hover {
-	height: 45px;
-	background-color: #48b637;
-}
-
-.nav ul .active {
-	height: 45px;
-	background-color: #3DA232;
-}
-.nav ul .active:hover{
-	height: 45px;
-	background-color: #3DA232;
-}
-
-
-
-.nav ul li a {
-	text-decoration: none;
-	display: block;
-	padding: 0 24px;
-	line-height: 50px;
+.menu > li > a{
 	color: #fff;
-	font-size: 15px;
 }
-
-.nav_user {
-	float: right;
-	background-color: #77C558;
+.user-center{
+	background: #55c760;
+	line-height: 48px;
 }
-
-.a {
-	border: 1px solid #fff;
-	margin-right: 5px;
-}
-
-.nav_user>p {
-	margin: 0;
-	width: 140px;
-	text-align: center;
+.user-center a,.user-center span{
 	color: #fff;
-	line-height: 50px;
-	font-size: 15px;
-	color: #77c558;
 }
-
-.nav_user>p>a {
-	color: #fff;
-	text-decoration: none;
+.user-center a:hover{
+	color: #ffff9b;
 }
-
-.nav_user>p>a:hover {
-	color: yellow;
-}
-
+/* 轮播广告 */
 .carouselbar {
 	border-bottom: 4px solid #ddd;
+}
+.carousel{
+	position: relative;/*为绝对定位的子元素提供参照物*/
+}
+.carousel .items a{
+	display: block;/*改为块级元素，可以修改宽和高*/
+	height: 380px;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;/*背景图仅显示一次，不重复*/
+}
+.carousel .items li:not(.active){/*不带.active的li隐藏*/
+	display: none;
+}
+.carousel .indicators{
+	position: absolute;
+	bottom: 20px;
+	left: 50%; /*固定定位的元素水平居中*/
+	margin-left: -72px;
+}
+.carousel .indicators li{
+	width: 18px;
+	height: 18px;
+	background: #ccc;
+	border-radius: 50%;/*边框圆角半径为尺寸的一般*/
+	float: left;
+	margin:0 9px;
+	cursor: pointer;/*光标悬停时变为小手*/
+}
+
+.carousel .indicators li.active{
+	background: #ff9300;
 }
 
 .mainbar {
