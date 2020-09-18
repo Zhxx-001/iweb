@@ -153,11 +153,106 @@
 .carousel .indicators li.active{
 	background: #ff9300;
 }
+.carousel .controls{
+	position: absolute;
+	left: 50%;
+	top: 50%;
 
+}
+.carousel  .controls .prev,
+.carousel  .controls .next{
+	position: absolute;
+	width: 54px;
+	height: 94px;
+	font-size: 4em;
+	line-height: 94px;
+	text-align: center;
+	/* opacity: ;会导致当前元素以及其中的文字、图像都透明 */
+	background-color: rgba(0,0,0,0.3);/*背景半透明*/
+	color:#fff;
+	margin-top: -47px;
+}
+.carousel  .controls .prev{
+	margin-left: -496px;
+}
+.carousel  .controls .next{
+	margin-left: 442px;
+}
+.carousel  .controls .prev:hover,
+.carousel  .controls .next:hover{
+	background: rgba(0,0,0,0.6);
+}
+/* 5.主题部分 */
 .mainbar {
 	border-bottom: 1px solid #ddd;
 }
+.mainbar .header{
+	position: relative; /*为绝对定位的子元素提供参照物
+89	*/
+	border-bottom: 3px solid #ddd;
+}
+.mainbar .header h3{
+	font-weight: normal;/*去除文字加粗*/
+	margin-bottom: 0.5em;
+	padding: 0  0.8em;
+}
+.mainbar  .header  a{
+	position: absolute;
+	right:0;
+	bottom:0.3em;
+}
+.mainbar .header span {
+	width: 6.5em;
+	height: 3px;
+	position: absolute;
+	left: 0;
+	bottom: -3px;
+	background: #00B156;
+}
+.mainbar .course,
+.mainbar .teacher{
+	padding:  1.2em 0em;/*每个列中的.course需要自己提供上下间距*/
+}
+.mainbar .course .pic img,
+.mainbar .teacher .pic img{
+	width: 100%;
+}
+.mainbar .course  .title{
+	display: block;/*让课程标题占一整行*/
+	text-align: left;
+}
+.mainbar .teacher  .teach{
+	display: block;/*让讲师姓名占一整行*/
+	text-align: center;
+}
+.mainbar .course .teacher{
+	display: block;/*让讲师姓名占一整行*/
+	font-size: .8em;
+	color: #999;
+	text-align: left;
+}
 
+.mainbar .teacher .mt{
+	display: block;/*让主讲占一整行*/
+	font-size: .8em;
+	color: #999;
+	text-align: center;
+}
+.mainbar .course .price{
+	display: block;/*让价格占一整行*/
+	font-weight: bold;
+	color: #ff5a00;
+	text-align: left;
+	line-height: 1.4em;
+}
+/* 第1/5/9个，col-lg-3中的.course没有padding.left */
+/* .mainbar  .col-lg-3:nth-child(4n+1)  .course{ */
+	/* padding-left: 0; */
+	/* margin-left: -1em; */
+}
+
+
+/* 6.底部条 */
 .bottombar {
 	background: #eee;
 }
