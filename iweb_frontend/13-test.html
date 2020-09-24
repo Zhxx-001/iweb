@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title></title>
+	<style>
+		.box{
+			background: #000000;
+			height: 100px;
+			width: 1px;
+			/* transition:  width 100s; */
+			transition:  all 50s;
+		}
+		.box.long{
+			transform: translateX(200px);
+			height: 400px;
+			width: 400px;
+			background: #ffffff;
+		}
+	</style>
+</head>
+<body>
+	<div class="box "></div>
+	<button data-bian="chang">变宽</button>
+	<button data-bian="duan">变窄</button>
+	<script>
+		document.querySelector('[data-bian="chang"]').onclick=function(){
+			document.querySelector('.box').classList.add('long')
+		}
+		document.querySelector('[data-bian="duan"]').onclick=function(){
+			document.querySelector('.box').classList.remove('long')
+		}
+	</script>
+</body>
+</html>
