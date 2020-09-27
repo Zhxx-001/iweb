@@ -461,3 +461,45 @@
 	margin: 0 0.5em;
 	color: #999;
 }
+/* 9.组件条 */
+.pager{
+	padding: 3em 0;
+}
+.pager ul{
+	text-align: center;
+}
+
+.pager ul li{
+	/* 让li变为行内块，既可以多个li共处一行，也可以指定尺寸/间距 */
+	display: inline-block;
+	/*此方式的不足：1.老IE不支持	2.HTML中只要li间有空白字符，呈现时就会有一个空格*/
+	border: 1px solid #ddd;
+	padding: 0.3em 0.7em;
+	cursor: pointer;/*鼠标悬停在li上方时，光标变为小于*/
+}
+.pager ul li:not(.active):hover,
+.pager ul li:not(.disabled):hover{
+	border: 1px solid #99d989;
+}
+.pager ul li.active{
+	background: #99d989;
+	border: 1px solid #99d989;
+	cursor: default;
+}
+.pager ul li.disabled{
+	background: #f3f3f3;
+	cursor: default;
+}
+.pager ul li a{
+	color: #999;
+}
+.pager ul li.active a{
+	color: #fff;
+	/* 将超链接的默认光标效果小手转化为平时效果 */
+	cursor: default;
+}
+.pager ul li.disabled a{
+	color: #ddd;
+	cursor: default;
+}
+
