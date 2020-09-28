@@ -477,8 +477,8 @@
 	padding: 0.3em 0.7em;
 	cursor: pointer;/*鼠标悬停在li上方时，光标变为小于*/
 }
-.pager ul li:not(.active):hover,
-.pager ul li:not(.disabled):hover{
+/* 当鼠标悬停与非.active项、非.disabled项上方时，边框变色 */
+.pager ul li:not(.active):not(.disabled):hover{
 	border: 1px solid #99d989;
 }
 .pager ul li.active{

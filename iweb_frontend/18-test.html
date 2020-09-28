@@ -1,14 +1,21 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title></title>
-	</head>
-	<body>
-		<script>
-			let i = 2
-			let selector = 'li:nth-child(' + (i+1) + ')'
-			console.log(selector)
-		</script>
-	</body>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title></title>
+</head>
+<body>
+	<div data-author="zhxx" data-width="80%" data-animate-min-width="20%" data-userage="20" data-buyCount="3">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni necessitatibus at a optio nostrum provident voluptate sint ullam similique nisi dolor aliquid dolores veritatis ipsam doloribus iste ipsum facilis inventore.
+	</div>
+	<script>
+		let box = document.querySelector('[data-author="zhxx"]')
+		// 
+		// console.log(box)
+		// 
+		console.dir(box)
+	</script>
+</body>
 </html>
