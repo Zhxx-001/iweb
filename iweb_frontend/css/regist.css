@@ -1,0 +1,95 @@
+/* 主体部分 */
+.mainbar{
+	background: #fcfcfc;
+}
+.mainbar .container{
+	background: #fff;
+	margin: 3em auto 3.5em;
+	border: 1px solid #e6e6e6;
+	/* 边框外侧的阴影：水平方向上的偏移量  竖直偏移量  阴影半径 */
+	box-shadow: 0px 0px 2px #e6e6e6;
+	/* 边框的圆角半径 */
+	border-radius: 2px;
+	padding: 1em 7em 2em;
+}
+.mainbar:before,
+.mainbar:after{
+	content: '';
+	display: table;
+}
+.form .header{
+	font-size: 1.2em;
+	color: #ff9300;
+	line-height: 4em;
+	border-bottom: 1px solid #ddd;
+	text-align: center;
+}
+
+.form .row{
+	line-height: 3em;
+	padding: .6em 0em;
+}
+.form label{
+	text-align: right;
+	display: block;
+}
+.form input{
+	width: 100%;
+}
+.form span.error{
+	color: #f00;
+}
+.form span.succ{
+	color: #00ce60;
+}
+.form input{
+	width: 100%;
+	padding: .8em 1em;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	outline: none;
+	vertical-align: middle;
+}
+.form .captcha{
+	height: 34px;/*宽会随着高度等比例缩放*/
+	vertical-align: middle;/*图片与后面的文字数值居中对齐*/
+}
+.form .refresh{
+	font-size: 2em;
+	color: #00BE56;
+	line-height: 34px;
+	cursor: pointer;
+}
+/* PHONE屏幕下，调整间距及文字对齐 */
+@media  screen and (max-width:767px) {
+	.mainbar .container{
+		padding: .5em 2em 1em;
+	}
+	.form .row{
+		line-height: 2em;
+	}
+	.form label{
+		text-align: left;
+	}
+}
+
+
+
+
+.checked{
+	width: 3em;
+	text-align: right;
+}
+.agreement{
+	text-align: left;
+	padding: 0;
+}
+.btn .button{
+	background: #72B134;
+	color: #fff;
+	height: 1em;
+	font-size: 1.6em;
+	text-align: center;
+	padding: .3em 0 1.5em 0;
+	cursor: pointer;
+}

@@ -34,6 +34,7 @@
 	background: #ff8300;
 	border: none;
 	outline: none;
+	cursor: pointer;
 }
 .course-header .add-to-favorite{
 	padding: .8em 2em;
@@ -41,6 +42,7 @@
 	background: #fe0e0e0;
 	border: none; /*清除按钮或输入框获得焦点时默认自带的蓝色的轮廓*/
 	outline: none;
+	cursor: pointer;
 }
 .course-details{
 	padding: 2em 0;
@@ -75,4 +77,27 @@
 .course-details .course-details-body p{
 	/*每个段落最开始缩进2个字符的空间*/
 	text-indent: 2em;
+}
+/* PAD屏幕下，课程介绍的头部需要调整文字的高度 */
+@media  screen and (min-width:768px) and (max-width:1023px) {
+	.course-header .items{
+		margin: .8em 0;
+		padding: .8em .8em;
+		line-height: 1.9em;
+	}
+	.course-header .price{
+		line-height: 2.7em;
+	}
+}
+/* PHONE屏幕下课程介绍头图片和文字各处一行中 */
+@media  screen and (max-width:767px) {
+	.course-header .pic{
+		padding: 0 1em;
+	}
+	.course-header .course-header-text{
+		padding: 1em 2em;
+	}
+	.course-header .course-details-body{
+		padding: 0.3em 1em;
+	}
 }
