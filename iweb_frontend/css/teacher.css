@@ -28,13 +28,9 @@
 	color: #f60;
 	line-height: 30px;
 }
-.teacher_list ul li>div>d1{
+.teacher_list ul li>div>dl {
 	font-size: 13px;
-	font-weight: lighter;
-	line-height: 30px;
-}
-.clearfloat img{
-	padding: 0px;
+	margin-top: 12px;
 }
 .clearfloat:after {
     content: "";
@@ -42,22 +38,4 @@
     height: 0;
     clear: both;
     visibility: hidden;
-}
-
-@media  screen and (min-width:768px) and (max-width:1023px){
-	.clearfloat div{
-		position: absolute;
-		left: 270px;
-		margin-top: 10px;
-	}
-}
-@media  screen and (max-width:767px) {
-	.clearfloat img{
-		margin-left: 50px;
-	}
-	.clearfloat div{
-		position: absolute;
-		left: 180px;
-		margin-top: 10px;
-	}
 }
